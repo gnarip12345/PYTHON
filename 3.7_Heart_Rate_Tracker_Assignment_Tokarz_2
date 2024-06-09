@@ -1,0 +1,39 @@
+# 3.7 - Jon Tokarz - Heart Rate Monitor Assignment - June 09, 2024
+
+
+# Define time slots
+time_slots = ["Morning", "Midday", "Afternoon", "Evening"]
+
+# Create an empty list to store heart rate data
+heart_rates = []
+
+# Iterate over each time slot
+for time_slot in time_slots:
+
+# Ask the user to enter their heart rate for the current time slot
+    heart_rate = int(input(f"Enter your heart rate for {time_slot} (beats per minute): "))
+    
+# Append the time slot and heart rate to the heart_rates list as a sublist
+    heart_rates.append([time_slot, heart_rate])
+
+# Calculate the total heart rate and count the number of readings
+total_heart_rate = 0
+num_readings = 0
+
+for _, rate in heart_rates:
+    total_heart_rate += rate
+    num_readings += 1
+
+# Calculate the average heart rate
+if num_readings > 0:
+    average_heart_rate = total_heart_rate / num_readings
+    print(f"Average heart rate: {average_heart_rate:.2f} beats per minute")
+else:
+    print("No heart rate readings were provided.")
+
+
+
+
+
+
+    # 3.7 - Jon Tokarz - Heart Rate Monitor Assignment - June 09, 2024
