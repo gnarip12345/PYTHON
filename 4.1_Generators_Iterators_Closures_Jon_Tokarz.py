@@ -16,7 +16,7 @@ def two_letter_combinations(characters):
 if __name__ == "__main__":
 
     # A sample list of characters
-    char_list = ['a', 'b', 'c']
+    char_list = ['a', 'e', 'i', 'o', 'u']
 
     # Using the generator function for the char_list
     combinations = two_letter_combinations(char_list)
