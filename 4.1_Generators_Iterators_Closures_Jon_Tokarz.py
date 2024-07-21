@@ -14,6 +14,7 @@ def two_letter_combinations(characters):
 
 # Run if the script is being run as the main program
 if __name__ == "__main__":
+    main()
 
     # A sample list of characters
     char_list = ['a', 'e', 'i', 'o', 'u']
