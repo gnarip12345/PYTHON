@@ -15,7 +15,6 @@ def main():
             birth_month = int(input("What is your birth month (as a number)? "))
             if 1<= birth_month <= 12:
                 return birth_month
-                break
 
             # Ensure your program can handle invalid inputs gracefully
             else:
@@ -23,15 +22,29 @@ def main():
         except ValueError:
             print("Invalid input - Please enter a number between 1 and 12.")
 
+birth_month = int(input("What is your birth month (as a number)? "))
+
+now = datetime.datetime.now()
+current_year = now.year
+
     # Ask the calendar module to generate the calendar for the given month and year
-    month_calendar = calendar.month(current_year, birth_month)
-    month_name = calendar.month_name[birth_month]
+month_calendar = calendar.month(current_year, birth_month)
+month_name = calendar.month_name[birth_month]
 
-    # Use Python's datetime module to find the current year
+# Use Python's datetime module to find the current year
 
-    #Print the calendar to the console in a readable format
-    print(f"\nCalendar for {month_name} {current_year}:")
-    print(month_calendar)
+
+# Get current date and time
+now = datetime.datetime.now()
+
+# Extract the year
+current_year = now.year
+
+month_name = now.month
+
+# Print the calendar to the console in a readable format
+print(f"\nCalendar for {month_name} {current_year}:")
+print(month_calendar)
 
 # Initiate if the script is being run as the main program
 if __name__ == "__main__":
